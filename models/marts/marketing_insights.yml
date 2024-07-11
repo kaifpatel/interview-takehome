@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: marketing_insights
+    description: |
+      Provides insights into product popularity based on category and color preferences, utilizing data from category mapping, color mapping, and product links.
+
+    columns:
+      - name: category_value
+        description: The categorical value representing the product category.
+      - name: color_value
+        description: The categorical value representing the product color.
+      - name: page_views
+        description: Number of times the product page has been viewed.
+        tests:
+          - not_null
+      - name: card_views
+        description: Number of times the product has been added to a shopping cart.
+        tests:
+          - not_null

@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_category
+    description: |
+      Provides deduplicated category data with the latest timestamps.
+
+    columns:
+      - name: pid
+        description: Product ID of each category.
+      - name: category_id
+        description: Category ID of each category.
+      - name: category_value
+        description: Category value.
+      - name: dw_insert_timestamp
+        description: Timestamp of data insertion.

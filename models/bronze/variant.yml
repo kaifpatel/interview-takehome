@@ -1,0 +1,92 @@
+version: 2
+
+models:
+  - name: variant
+    description: |
+      Provides raw variant data.
+
+    columns:
+      - name: pid
+        description: Product ID.
+        tests:
+          - not_null
+      - name: variant
+        description: Variant of the product.
+        tests:
+          - not_null
+      - name: actual_size
+        description: Actual size of the product.
+        tests:
+          - not_null
+      - name: weave_feature
+        description: Weave feature of the product.
+      - name: weave_cat
+        description: Weave category of the product.
+      - name: size_grp
+        description: Size group of the product.
+        tests:
+          - not_null
+      - name: shipping_size
+        description: Shipping size of the product.
+        tests:
+          - not_null
+      - name: shape
+        description: Shape of the product.
+        tests:
+          - not_null
+      - name: weight
+        description: Weight of the product.
+        tests:
+          - not_null
+      - name: price
+        description: Price of the product.
+        tests:
+          - not_null
+      - name: msrp
+        description: Manufacturer's suggested retail price (MSRP) of the product.
+        tests:
+          - not_null
+      - name: stock_level
+        description: Stock level of the product.
+        tests:
+          - not_null
+      - name: depletion_level
+        description: Depletion level of the product.
+      - name: low_stock
+        description: Low stock status of the product.
+        tests:
+          - not_null
+      - name: estimated_delivery_date
+        description: Estimated delivery date of the product.
+        tests:
+          - not_null
+      - name: this_isd_range
+        description: ISD range of the product.
+        tests:
+          - not_null
+      - name: status
+        description: Status of the product.
+        tests:
+          - not_null
+      - name: origin
+        description: Origin of the product.
+      - name: new_arrival
+        description: New arrival status of the product.
+        tests:
+          - not_null
+      - name: stock_msg
+        description: Stock message of the product.
+      - name: stock_edd_msg
+        description: Stock EDD message of the product.
+      - name: other_stock_core
+        description: Other stock core of the product.
+        tests:
+          - not_null
+      - name: other_stock_compass
+        description: Other stock compass of the product.
+        tests:
+          - not_null
+      - name: dw_insert_timestamp
+        description: Timestamp of data insertion.
+        tests:
+          - not_null

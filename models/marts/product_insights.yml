@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: product_insights
+    description: |
+      Provides insights into product performance and upsell data based on sales and inventory information.
+
+    columns:
+      - name: pid
+        description: Primary key representing the product ID.
+      - name: name
+        description: Name of the product.
+      - name: variant
+        description: Variant of the product.
+      - name: actual_size
+        description: Actual size of the product variant.
+      - name: price
+        description: Price of the product variant.
+      - name: stock_level
+        description: Current stock level of the product variant.
+      - name: depletion_level
+        description: Depletion level of the product variant.
+      - name: size
+        description: Size of the upsell pad associated with the product variant.
+      - name: shape
+        description: Shape of the upsell pad associated with the product variant.
+      - name: upsell_price
+        description: Price of the upsell pad associated with the product variant.

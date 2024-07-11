@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: color_insights
+    description: |
+      Provides insights into product colors including count of products and average price, to inform teams on the number of products per color.
+
+    columns:
+      - name: color
+        description: Color of the product.
+      - name: product_count
+        description: Number of distinct products with the color.
+        tests:
+          - not_null
+      - name: avg_price
+        description: Average price of products with the color.
+        tests:
+          - not_null

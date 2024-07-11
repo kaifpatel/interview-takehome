@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: int_color
+    description: |
+      Provides deduplicated color data with the latest timestamps.
+
+    columns:
+      - name: pid
+        description: Product ID for each color.
+      - name: color_id
+        description: Color ID for each color.
+      - name: color_value
+        description: Color value.
+      - name: dw_insert_timestamp
+        description: Timestamp of data insertion.

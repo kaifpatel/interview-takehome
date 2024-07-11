@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: pads_upsell
+    description: |
+      Provides raw pads upsell data.
+
+    columns:
+      - name: size
+        description: Size of the pad upsell.
+        tests:
+          - not_null
+      - name: shape
+        description: Shape of the pad upsell.
+        tests:
+          - not_null
+      - name: price
+        description: Price of the pad upsell.
+        tests:
+          - not_null
+      - name: width
+        description: Width of the pad upsell.
+        tests:
+          - not_null
+      - name: sqft
+        description: Square footage of the pad upsell.
+        tests:
+          - not_null
+      - name: type
+        description: Type of the pad upsell.
+      - name: stock
+        description: Stock level of the pad upsell.
+      - name: height
+        description: Height of the pad upsell.
+        tests:
+          - not_null
+      - name: variant
+        description: Variant of the pad upsell.
+        tests:
+          - not_null
+      - name: p_id
+        description: Product ID associated with the pad upsell.
+        tests:
+          - not_null
+      - name: pad_id
+        description: Pad ID.
+        tests:
+          - not_null
+      - name: dw_insert_timestamp
+        description: Timestamp of data insertion.
+        tests:
+          - not_null

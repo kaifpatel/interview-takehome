@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: category_map
+    description: |
+      Provides raw category data.
+
+    columns:
+      - name: pid
+        description: Product ID of each category.
+        tests:
+          - not_null
+      - name: category_id
+        description: Category ID of each category.
+        tests:
+          - not_null
+      - name: category_value
+        description: Category value.
+        tests:
+          - not_null
+      - name: dw_insert_timestamp
+        description: Timestamp of data insertion.
+        tests:
+          - not_null
