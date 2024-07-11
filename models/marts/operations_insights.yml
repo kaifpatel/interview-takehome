@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: operations_insights
+    description: |
+      Provides operational insights into inventory and stock levels of product variants and associated upsell pads.
+
+    columns:
+      - name: variant
+        description: Primary key representing the variant ID.
+      - name: actual_size
+        description: Actual size of the product variant.
+      - name: stock_level
+        description: Current stock level of the product variant.
+      - name: depletion_level
+        description: Depletion level of the product variant.
+      - name: size
+        description: Size of the upsell pad associated with the product variant.
+      - name: shape
+        description: Shape of the upsell pad associated with the product variant.
+      - name: stock
+        description: Current stock availability of the upsell pad associated with the product variant.
+      - name: dw_insert_timestamp
+        description: Timestamp indicating when the stock information was last updated for the upsell pad.

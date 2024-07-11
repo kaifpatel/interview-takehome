@@ -1,0 +1,90 @@
+version: 2
+
+models:
+  - name: parent
+    description: |
+      Provides raw parent product data.
+
+    columns:
+      - name: pid
+        description: Product ID.
+        tests:
+          - not_null
+      - name: product_type_id
+        description: Product type ID.
+        tests:
+          - not_null
+      - name: name
+        description: Product name.
+        tests:
+          - not_null
+      - name: url
+        description: URL of the product.
+        tests:
+          - not_null
+      - name: origin
+        description: Origin of the product.
+        tests:
+          - not_null
+      - name: thickness
+        description: Thickness of the product.
+      - name: material
+        description: Material of the product.
+        tests:
+          - not_null
+      - name: weave
+        description: Weave of the product.
+      - name: weave_feature
+        description: Weave feature of the product.
+      - name: color
+        description: Color of the product.
+        tests:
+          - not_null
+      - name: brand
+        description: Brand of the product.
+        tests:
+          - not_null
+      - name: image_name
+        description: Image name of the product.
+        tests:
+          - not_null
+      - name: image_type
+        description: Image type of the product.
+        tests:
+          - not_null
+      - name: internal_name
+        description: Internal name of the product.
+        tests:
+          - not_null
+      - name: category
+        description: Category of the product.
+        tests:
+          - not_null
+      - name: min_price
+        description: Minimum price of the product.
+        tests:
+          - not_null
+      - name: max_price
+        description: Maximum price of the product.
+        tests:
+          - not_null
+      - name: availability
+        description: Availability status of the product.
+        tests:
+          - not_null
+      - name: aggregate
+        description: Aggregate status of the product.
+        tests:
+          - not_null
+      - name: clearance
+        description: Clearance status of the product.
+        tests:
+          - not_null
+      - name: long_description
+        description: Long description of the product.
+      - name: shopbyroom
+        description: Rooms where the product can be used.
+      - name: dw_insert_timestamp
+        description: Timestamp of data insertion.
+        tests:
+          - not_null

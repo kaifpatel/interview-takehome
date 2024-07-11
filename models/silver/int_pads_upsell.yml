@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: int_pads_upsell
+    description: |
+      Provides deduplicated pads upsell data with the latest timestamps.
+
+    columns:
+      - name: size
+        description: Size of the pad upsell.
+      - name: shape
+        description: Shape of the pad upsell.
+      - name: price
+        description: Price of the pad upsell.
+      - name: width
+        description: Width of the pad upsell.
+      - name: sqft
+        description: Square footage of the pad upsell.
+      - name: type
+        description: Type of the pad upsell.
+      - name: stock
+        description: Stock level of the pad upsell.
+      - name: height
+        description: Height of the pad upsell.
+      - name: variant
+        description: Variant of the pad upsell.
+      - name: p_id
+        description: Product ID associated with the pad upsell.
+      - name: pad_id
+        description: Pad ID.
+      - name: dw_insert_timestamp
+        description: Timestamp of data insertion.

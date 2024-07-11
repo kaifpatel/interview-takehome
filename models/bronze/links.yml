@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: links
+    description: |
+      Provides raw link data.
+
+    columns:
+      - name: base_url
+        description: Base URL of the link.
+        tests:
+          - not_null
+      - name: page_links
+        description: Page links.
+        tests:
+          - not_null
+      - name: card_links
+        description: Card links.
+        tests:
+          - not_null
+      - name: request_time_stamp
+        description: Request timestamp.
+        tests:
+          - not_null
+      - name: dw_insert_timestamp
+        description: Timestamp of data insertion.
+        tests:
+          - not_null

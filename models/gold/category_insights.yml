@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: category_insights
+    description: |
+      Provides insights into product categories including count of products and average price, to primarily inform teams of the priciest categories.
+
+    columns:
+      - name: category
+        description: Category of the product
+      - name: product_count
+        description: Number of distinct products in the category
+        tests:
+          - not_null
+      - name: avg_price
+        description: Average price of products in the category
+        tests:
+          - not_null

@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: int_parent
+    description: |
+      Provides deduplicated parent product data with the latest timestamps.
+
+    columns:
+      - name: pid
+        description: Product ID.
+      - name: product_type_id
+        description: Product type ID.
+      - name: name
+        description: Product name.
+      - name: url
+        description: URL of the product.
+      - name: origin
+        description: Origin of the product.
+      - name: thickness
+        description: Thickness of the product.
+      - name: material
+        description: Material of the product.
+      - name: weave
+        description: Weave of the product.
+      - name: weave_feature
+        description: Weave feature of the product.
+      - name: color
+        description: Color of the product.
+      - name: brand
+        description: Brand of the product.
+      - name: image_name
+        description: Image name of the product.
+      - name: image_type
+        description: Image type of the product.
+      - name: internal_name
+        description: Internal name of the product.
+      - name: category
+        description: Category of the product.
+      - name: min_price
+        description: Minimum price of the product.
+      - name: max_price
+        description: Maximum price of the product.
+      - name: availability
+        description: Availability status of the product.
+      - name: aggregate
+        description: Aggregate status of the product.
+      - name: clearance
+        description: Clearance status of the product.
+      - name: long_description
+        description: Long description of the product.
+      - name: shopbyroom
+        description: Rooms where the product can be used.
+      - name: dw_insert_timestamp
+        description: Timestamp of data insertion.

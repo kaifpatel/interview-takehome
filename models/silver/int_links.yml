@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: int_links
+    description: |
+      Provides deduplicated links data with the latest timestamps.
+
+    columns:
+      - name: base_url
+        description: Base URL of the link.
+      - name: page_links
+        description: Page links.
+      - name: card_links
+        description: Card links.
+      - name: request_time_stamp
+        description: Request timestamp.
+      - name: dw_insert_timestamp
+        description: Timestamp of data insertion.
