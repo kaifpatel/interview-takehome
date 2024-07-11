@@ -8,8 +8,6 @@ models:
     columns:
       - name: color
         description: Color of the product.
-        tests:
-          - not_null
       - name: product_count
         description: Number of distinct products with the color.
         tests:

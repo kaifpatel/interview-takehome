@@ -44,18 +44,12 @@ models:
         description: Brand of the product.
         tests:
           - not_null
-      - name: image_name
+      - name: "imageName"
         description: Image name of the product.
-        tests:
-          - not_null
-      - name: image_type
+      - name: "imageType"
         description: Image type of the product.
-        tests:
-          - not_null
-      - name: internal_name
+      - name: "internalName"
         description: Internal name of the product.
-        tests:
-          - not_null
       - name: category
         description: Category of the product.
         tests:

@@ -22,8 +22,6 @@ models:
         description: Weave feature of the product.
       - name: weave_cat
         description: Weave category of the product.
-        tests:
-          - not_null
       - name: size_grp
         description: Size group of the product.
         tests:

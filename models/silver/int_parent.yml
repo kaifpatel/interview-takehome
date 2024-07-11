@@ -30,10 +30,16 @@ models:
         description: Brand of the product.
       - name: image_name
         description: Image name of the product.
+        tests:
+          - not_null
       - name: image_type
         description: Image type of the product.
+        tests:
+          - not_null
       - name: internal_name
         description: Internal name of the product.
+        tests:
+          - not_null
       - name: category
         description: Category of the product.
       - name: min_price
